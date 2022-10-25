@@ -15,7 +15,7 @@ function mostrarModal()
 
 }
 
-function modalOcultar()
+function OcultarModal()
 {
     var x = document.getElementById('divrow1');
     x.style.visibility = 'hidden';
@@ -67,8 +67,7 @@ function formularioAuto()
           case 1:
               opcionSeguroValido=true;
               funCotizarSeguro()
-            break;
-              
+            break;              
           case 2:
             opcionSeguroValido=true;
               funComprarSeguro()
@@ -210,9 +209,3 @@ function validarEmail(email)
    return emailValido;
 }
 
-// function ocultarModal()
-// {
-//     var x = document.getElementById('divrow1');
-//     x.style.visibility = 'hidden';
-
-// }
