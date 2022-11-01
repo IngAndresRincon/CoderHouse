@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./funciones.js"></script>
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+    
     <title>Document</title>
 </head>
 <body>
@@ -48,25 +48,30 @@
               
                 <div class="row" style="text-align: center;">
                      <div class="col col-4">
-                         <a href="" onclick="formularioAuto()">Autos</a>
+                        <span style="display: flex;"><img src="./img/car.gif" alt="" width="20%"><h5 href=""  onclick="formularioAuto(1)">Auto</h5></span>
+                        
+                         <!-- <a href="" onclick="formularioAuto()">Autos</a> -->
                      </div>
                      <div class="col col-4">
-                         <a href="">Motos</a>
+                        <span style="display: flex;"><img src="./img/motorcycle.gif" alt="" width="20%"><h5 onclick="formularioMoto()">Moto</h5></span>
+                         <!-- <a href="">Motos</a> -->
                      </div>
                      <div class="col col-4">
-                         <a href="">Bicicletas</a>
+                      <span style="display: flex;"><img src="./img/cycling.gif" alt="" width="20%"><h5>Bicicleta</h5></span>
+                         <!-- <a href="">Bicicletas</a> -->
                      </div>
                 </div>
 
                 <div class="row" style="text-align: center;">
                     <div class="col col-4">
-                        <a href="">Viaje</a>
+                      <span style="display: flex;"><img src="./img/travel.gif" alt="" width="20%"><h5>Viaje</h5></span>
+                        <!-- <a href="">Viaje</a> -->
                     </div>
                     <div class="col col-4">
-                        <a href="">Vida</a>
+                      <span style="display: flex;"><img src="./img/home.gif" alt="" width="20%"><h5>Hogar</h5></span>
                     </div>
                     <div class="col col-4">
-                        <a href="">Salud</a>
+                      <span style="display: flex;"><img src="./img/heartbeat.gif" alt="" width="20%"><h5>Salud</h5></span>
                     </div>
                </div>
      
@@ -77,5 +82,8 @@
 
         
     </div>
+    <script src="./MenuCarro.js"></script>
+    <script src="./classModelCarro.js"></script>
+    <script src="./MenuMoto.js"></script>
 </body>
 </html>
