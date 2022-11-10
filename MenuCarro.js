@@ -1,30 +1,10 @@
 
 
-function mostrarModal()
-{
-    
-    // x.style.visibility = 'visible';
-
-    let x = document.getElementById('divrow1');
-    x.style.visibility = 'visible';
-    // if (x.style.visibility === 'hidden') {
-    //     x.style.visibility = 'visible';
-    // } else {
-    //   x.style.visibility = 'hidden';
-    // }
-
-}
-
-function OcultarModal()
-{
-    let x = document.getElementById('divrow1');
-    x.style.visibility = 'hidden';
-}
-
 let placa = "";
 let email = "";
 let nombre = "";
 const valorDolar = 5000
+let arrayCarro = [];
 function formularioAuto(dato)
 {
     let emailValido = false;
@@ -64,6 +44,8 @@ function formularioAuto(dato)
     {
         let opcSeguro = parseInt( prompt("Sr(a) "+nombre+"\n"+ "Seleccione una opción:\n"+"1.Cotizar Seguro\n"+"2.Comprar Seguro\n"+"3.Renovar seguro\n"+"4.Salir") );
         let newCar = new Carro(nombre,placa,email);
+        arrayCarro.push(newCar);
+        console.log(arrayCarro);
         switch(opcSeguro)
         {
           case 1:

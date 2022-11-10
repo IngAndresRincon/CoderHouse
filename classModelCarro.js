@@ -1,13 +1,10 @@
 class Carro{
 
-
-
     constructor(conductor,placa,correo){
         this.nombre = conductor;
         this.placa = placa;        
         this.correo = correo;
     }
-
     
     mostrarInformacion()
     {
@@ -17,7 +14,11 @@ class Carro{
 
     funComprarSeguro()
     {
+        let newFecha = new Date();
         let modelo = parseInt(prompt('Ingrese el módelo del vehículo: '))
+        if(modelo > parseInt(newFecha.getFullYear))
+            console.log('El módelo del vehículo no puede ser mayor al año actual');
+
         let valorSeguro = 0;
         switch(modelo)
         {
@@ -56,10 +57,11 @@ class Carro{
     
                 
         let opcCompra = parseInt(prompt("Comprar seguro:\n1. Si\n2. No"))
-    
+        
+        
         if(opcCompra==1)
         {
-            alert("Seguro Comprado!\n Sr(a) "+this.nombre+"\n"+"El vehículo de placa: "+this.placa+ " módelo: "+modelo+" compró un seguro por valor de: "+valorSeguro/valorDolar+" dolares");
+            alert("Seguro Comprado "+newFecha.getDate()+"-"+(parseInt(newFecha.getMonth())+1)+"-"+newFecha.getFullYear()+"!\n Sr(a) "+this.nombre+"\n"+"El vehículo de placa: "+this.placa+ " módelo: "+modelo+" compró un seguro por valor de: "+valorSeguro/valorDolar+" dolares");
         }
         else
         {

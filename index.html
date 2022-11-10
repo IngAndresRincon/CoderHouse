@@ -23,7 +23,7 @@
                     </button> -->
                     <div class="collapse navbar-collapse" id="navbarNav">
                       <ul class="navbar-nav">    
-                        <li class="nav-item" onmouseover="mostrarModal()" >
+                        <li class="nav-item" id="view1">
                           <a class="nav-link active" aria-current="page" href="#" >Seguros</a>
                         </li>
                         <li class="nav-item">
@@ -44,7 +44,7 @@
         </div>
 
         <div class="row justify-content-center">
-            <div class="row" id="divrow1" onmouseout="OcultarModal()" onmouseover="mostrarModal()">
+            <div class="row" id="divrow1">
               
                 <div class="row" style="text-align: center;">
                      <div class="col col-4">
@@ -57,24 +57,11 @@
                          <!-- <a href="">Motos</a> -->
                      </div>
                      <div class="col col-4">
-                      <span style="display: flex;"><img src="./img/cycling.gif" alt="" width="20%"><h5>Bicicleta</h5></span>
+                      <span style="display: flex;"><img src="./img/heartbeat.gif" alt="" width="20%"><h5>Salud</h5></span>
                          <!-- <a href="">Bicicletas</a> -->
                      </div>
                 </div>
 
-                <div class="row" style="text-align: center;">
-                    <div class="col col-4">
-                      <span style="display: flex;"><img src="./img/travel.gif" alt="" width="20%"><h5>Viaje</h5></span>
-                        <!-- <a href="">Viaje</a> -->
-                    </div>
-                    <div class="col col-4">
-                      <span style="display: flex;"><img src="./img/home.gif" alt="" width="20%"><h5>Hogar</h5></span>
-                    </div>
-                    <div class="col col-4">
-                      <span style="display: flex;"><img src="./img/heartbeat.gif" alt="" width="20%"><h5>Salud</h5></span>
-                    </div>
-               </div>
-     
 
              </div>
         </div>
@@ -84,6 +71,7 @@
     </div>
     <script src="./MenuCarro.js"></script>
     <script src="./classModelCarro.js"></script>
+    <script src="./control.js"></script>
     <script src="./MenuMoto.js"></script>
 </body>
 </html>
