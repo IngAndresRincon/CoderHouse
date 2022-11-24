@@ -1,0 +1,108 @@
+#title1
+{
+    /* border:1px solid black;  */
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.main{
+    background: #0264d6; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover,  #40b8d3 1%, #1c2b5a 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(1%,#40b8d3), color-stop(100%,#1c2b5a)); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover,  #40b8d3 1%,#1c2b5a 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover,  #40b8d3 1%,#1c2b5a 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover,  #40b8d3 1%,#1c2b5a 100%); /* IE10+ */
+    background: radial-gradient(ellipse at center,  #40b8d3 1%,#1c2b5a 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40b8d3', endColorstr='#1c2b5a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    height:calc(100vh);
+    width:100%;
+    }
+    
+
+.container-fluid    
+{
+    padding-top: 50px;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
+    background-color: white;
+}
+
+.navbar
+{
+    background-color: #d9e1f1 !important;
+    /* border-radius: 0 0 10px 10px;
+    box-shadow: 0px 0px 2px 2px rgb(129, 125, 125); */
+}
+
+.dropdown-menu
+{
+    padding: 0px;
+}
+
+.dropdown-menu li:hover
+{
+    background-color: #d9e1f1;
+}
+
+#divrow1
+{
+    border: 1px solid rgb(205, 205, 212); 
+    border-radius: 5px; 
+    box-shadow: 1px 0px 1px 0px10px 10px 5px 0px rgba(0,0,0,0.75);
+    width: 60%; 
+    margin-top: 10px; 
+    height: 50px;
+    visibility: hidden;
+    background-color: white;
+
+}
+
+h5{
+    cursor: pointer;
+    color: black;
+    padding-top: 10px;
+}
+
+.formularioCarro
+{
+
+    border-radius: 3px;
+    border: 1px solid gray;
+    box-shadow: 0px 0px 2px 1px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#d9e1f1;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.completarpagoSeguroCarro
+{
+background-color: white;
+border-radius: 3px;
+border: 1px solid rgb(201, 199, 199);
+/* box-shadow: 0px 0px 2px 1px; */
+width: 25%;
+margin-left: auto;
+margin-right: auto;
+margin-top: 20px;
+padding: 0px;
+
+}
+
+
+span
+{
+    padding: 0px;
+    text-align: left;
+}
+
+.row{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* CREDIT CARD */

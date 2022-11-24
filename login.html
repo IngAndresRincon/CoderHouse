@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/login.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.6.10/dist/sweetalert2.all.min.js"></script>
+    
+    
+
+
+</head>
+<body>
+    
+    <div class="main">
+
+        <div class="container">
+            <center>
+                <div class="centrar">
+                    <div clas="row">
+                        <div class="row" style="border-right: 1px solid #fff;width: 55%;">
+                            <div class="col col-lg-12">
+                                <p>
+                                <ion-icon name="person-circle" size="large"></ion-icon>
+                                <input type="text" name="" placeholder="Username" id="inputusuario" form="form-control" style="height: 50px;width: 100%; border-radius: 3px; border: 0px;">
+                                </p>
+                            </div>
+                            <div class="col col-lg-12">
+                                <p>
+                                <ion-icon name="key" size="large"></ion-icon>
+                                <input type="password" name="" placeholder="Password" id="inputcontraseña" form="form-control" style="height: 50px;width: 100%;border-radius: 3px; border: 0px;">
+                                </p>
+                                
+                            </div>
+                            <div class="col col-lg-12">
+                                    <input type="button" id="btnLogin" value="INGRESAR" class="btn btn-dark" style="width: 100%;">
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col col-lg-6 recoveryPass">
+                                    <a href="" id="bntolvidosuclave">¿Olvidó su clave?</a>                                
+                                </div>
+                                <div class="col col-lg-6 registro">
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">Registrarme</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </center>
+        </div>
+
+    </div>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                <h5 class="modal-title" id="exampleModalLabel">REGISTRO</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                <div class="row justify-content-center">
+                    <div class="col col-lg-12">
+                        <p><input type="text" name="" id="newUser" class="form-control" placeholder="Email"></p>
+                    </div>
+                    <div class="col col-lg-12">
+                        <p><input type="password" name="" id="newPass" class="form-control" placeholder="Contraseña"></p>
+                    </div>
+                    <div>
+                        <input type="button" value="Guardar" id="btnregistrarUsuario" class="btn btn-success" style="width: 100%;">
+                    </div>
+                </div>
+                </div>
+                <div class="modal-footer">
+              
+                </div>
+            </div>
+            </div>
+        </div>
+
+<script src="JS/login.js"></script>
+<script src="JS/classModelUsuarioLogin.js"></script>
+
+</body>
+</html>
