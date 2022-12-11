@@ -1,6 +1,8 @@
 
 ListaUsuarios = [];
 
+
+
 document.getElementById('btnregistrarUsuario').addEventListener('click',function(){
     
     let nuevoUsuario = document.getElementById('newUser').value;
@@ -12,6 +14,40 @@ document.getElementById('btnregistrarUsuario').addEventListener('click',function
     {
         ArrayUsuarios = [];
     }
+    else
+    {
+
+        let existe = false;
+        let usuarioBD = ArrayUsuarios.find(function(e) {
+                if(e.Usuario == nuevoUsuario)
+                {
+                    existe = true;
+                }                
+        });
+
+        if(existe)
+        {
+            Swal.fire({
+                icon:"error",
+                title: "JS",
+                text:"El usuario ya existe",
+                
+            }).then((result) => {
+                /* Read more about isConfirmed, isDenied below */
+                if (result.isConfirmed) {
+                  window.open('login.html');
+                } 
+              })
+            
+            return;
+        }
+
+        console.log('Continua...');
+    }
+
+
+
+
 
     if(!validarEmail(nuevoUsuario))
     {
@@ -22,6 +58,10 @@ document.getElementById('btnregistrarUsuario').addEventListener('click',function
         })
         return;
     }
+
+
+
+
 
     ArrayUsuarios.push(new UsuarioLogin(nuevoUsuario,nuevaContraseña));
     localStorage.setItem("usuarios", JSON.stringify(ArrayUsuarios));

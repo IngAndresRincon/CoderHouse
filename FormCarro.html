@@ -45,13 +45,13 @@
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                   <li><img src="./img/car.gif" alt="" width="20%"><a href="FormCarro.html" style="color: black;">Auto</a></li>
                   <li><img src="./img/motorcycle.gif" alt="" width="20%"><a href="FormMoto.html" style="color: black;">Moto</a></li>
-                  <li><img src="./img/heartbeat.gif" alt="" width="20%"><a href="FormCarro.html" style="color: black;">Salud</a></li>
+                  <li><img src="./img/heartbeat.gif" alt="" width="20%"><a href="FormSalud.html" style="color: black;">Salud</a></li>
                 </ul>
               </div>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#">SEGUROS PARA PERSONAS</a>
-            </li>
+            </li> -->
             <li>
           </ul>                          
         </div>
@@ -77,6 +77,9 @@
         <div class="row" style="background-color: #f0f3f5;">
             <p><b>CREDIT CARD</b> Ingresar los datos</p>
         </div>
+        
+        <div class="alert alert-danger" role="alert" id="divAlertCC" style="display: none ;">      
+        </div>        
         
         <div class="row">          
           <span>Nombre</span>
@@ -131,13 +134,13 @@
         </div>
         <div class="row" style="background-color: #f0f3f5;">
             <div class="col col-lg-4">
-              <p><input type="button" value="Reset" id="ccButtonReset" class="btn btn-primary" ></p>
+              <p><input type="button"  value="Reset" id="ccButtonReset" class="btn btn-primary" ></p>
             </div>
             <div class="col col-lg-4">
               <p><input type="button" value="Cancelar" id="ccButtonCancel" class="btn btn-danger" ></p>
             </div>
             <div class="col col-lg-4">
-              <p><input type="button" value="Pagar" class="btn btn-success"></p>
+              <p><input type="button" id="btnPagarSeguroVehiculo" value="Pagar" class="btn btn-success"></p>
             </div>
         </div>
 
@@ -167,6 +170,19 @@
                   <span>Placa</span>
                   <p><input type="text" id="placaRegistroVehiculo" placeholder="PLACA VEHICULO" class="form-control"></p>
                 </div>
+                <div class="row col col-lg-12">
+                  <span>Año Modelo</span>
+                  <p><Select class="form-select" id="selectmodeloVehiculo">
+                      <option value="2015">Año 2015</option>  
+                      <option value="2016">Año 2016</option>  
+                      <option value="2017">Año 2017</option>  
+                      <option value="2018">Año 2018</option>  
+                      <option value="2019">Año 2019</option>  
+                      <option value="2020">Año 2020</option>  
+                      <option value="2021">Año 2021</option>  
+                      <option value="2022">Año 2022</option>  
+                  </Select> </p>
+                </div>
                 <div class="row">
                   <div class="col col-lg-6">
                       <input type="button" id="btncotizarsegurocarro" value="COTIZAR" class="btn btn-primary">
@@ -190,7 +206,7 @@
   
     <script src="JS/MenuCarro.js"></script>
     <script src="JS/classModelCarro.js"></script>
+    <script src="JS/classFormaPago.js"></script>
     <script src="JS/control.js"></script>
-    <script src="JS/MenuMoto.js"></script>
 </body>
 </html>
